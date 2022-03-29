@@ -98,7 +98,7 @@ class _MorseLogicState extends State<MorseLogic> {
         header('Самостоятельность при ходьбе'),
         RadioListTile(
             title: Text(
-                'ходит сам (даже если при помощи кого-то), или строгий постельный режим, неподвижно лежит'),
+                'Ходит сам (даже если при помощи кого-то), или строгий постельный режим, неподвижно лежит'),
             value: _val3,
             groupValue: 0,
             onChanged: (val) {
@@ -107,7 +107,7 @@ class _MorseLogicState extends State<MorseLogic> {
               });
             }),
         RadioListTile(
-            title: Text('костыли/ходунки/трость'),
+            title: Text('Костыли/ходунки/трость'),
             value: _val3,
             groupValue: 15,
             onChanged: (val) {
@@ -116,7 +116,7 @@ class _MorseLogicState extends State<MorseLogic> {
               });
             }),
         RadioListTile(
-            title: Text('опирается о мебель или стены для поддержки'),
+            title: Text('Опирается о мебель или стены для поддержки'),
             value: _val3,
             groupValue: 30,
             onChanged: (val) {
@@ -146,7 +146,7 @@ class _MorseLogicState extends State<MorseLogic> {
             }),
         header('Походка'),
         RadioListTile(
-            title: Text('нормальная (ходит свободно)'),
+            title: Text('Нормальная (ходит свободно)'),
             value: _val5,
             groupValue: 0,
             onChanged: (val) {
@@ -156,7 +156,7 @@ class _MorseLogicState extends State<MorseLogic> {
             }),
         RadioListTile(
             title: Text(
-                'слегка несвободная (ходит с остановками, шаги короткие, иногда с задержкой)'),
+                'Слегка несвободная (ходит с остановками, шаги короткие, иногда с задержкой)'),
             value: _val5,
             groupValue: 10,
             onChanged: (val) {
@@ -166,7 +166,7 @@ class _MorseLogicState extends State<MorseLogic> {
             }),
         RadioListTile(
             title: Text(
-                'нарушения (не может встать, ходит опираясь, смотрит вниз)'),
+                'Нарушения (не может встать, ходит опираясь, смотрит вниз)'),
             value: _val5,
             groupValue: 20,
             onChanged: (val) {
@@ -176,7 +176,7 @@ class _MorseLogicState extends State<MorseLogic> {
             }),
         header('Психическое состояние'),
         RadioListTile(
-            title: Text('знает о своей способности двигаться'),
+            title: Text('Знает о своей способности двигаться'),
             value: _val6,
             groupValue: 0,
             onChanged: (val) {
@@ -185,7 +185,7 @@ class _MorseLogicState extends State<MorseLogic> {
               });
             }),
         RadioListTile(
-            title: Text('не знает или забывает, что нужна помощь при движении'),
+            title: Text('Не знает или забывает, что нужна помощь при движении'),
             value: _val6,
             groupValue: 15,
             onChanged: (val) {
