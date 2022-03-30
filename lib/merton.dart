@@ -1062,7 +1062,10 @@ class _MertonLogicState extends State<MertonLogic> {
             _df7,
             _ch1,
             _ch2,
-            _ch3)
+            _ch3),
+        SizedBox(
+          height: 20,
+        ),
       ],
     );
   }

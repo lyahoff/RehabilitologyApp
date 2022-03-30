@@ -96,6 +96,7 @@ class _rivermeadLogicState extends State<rivermeadLogic> {
           height: 10,
         ),
         CheckboxListTile(
+            controlAffinity: ListTileControlAffinity.leading,
             title: Text(
                 'Поворот в постели. Можете ли вы повернуться со спины на бок без посторонней помощи?'),
             value: val1,
@@ -109,6 +110,7 @@ class _rivermeadLogicState extends State<rivermeadLogic> {
               });
             }),
         CheckboxListTile(
+            controlAffinity: ListTileControlAffinity.leading,
             title: Text(
                 'Переход в положение сидя. Можете ли вы самостоятельно сесть на край постели из положения лежа?'),
             value: val2,
@@ -122,6 +124,7 @@ class _rivermeadLogicState extends State<rivermeadLogic> {
               });
             }),
         CheckboxListTile(
+            controlAffinity: ListTileControlAffinity.leading,
             title: Text(
                 'Равновесие сидя. Можете ли вы сидеть на краю постели без поддержки в течение 10 секунд?'),
             value: val3,
@@ -135,6 +138,7 @@ class _rivermeadLogicState extends State<rivermeadLogic> {
               });
             }),
         CheckboxListTile(
+            controlAffinity: ListTileControlAffinity.leading,
             title: Text(
                 'Самостоятельное вставание. Можете ли вы встать с любого стула менее чем за 15 секунд и удерживаться в положении стоя около стула 15 секунд (с помощью рук или, если требуется с помощью вспомогательных средств)?'),
             value: val4,
@@ -148,6 +152,7 @@ class _rivermeadLogicState extends State<rivermeadLogic> {
               });
             }),
         CheckboxListTile(
+            controlAffinity: ListTileControlAffinity.leading,
             title: Text(
                 'Самостоятельное стояние. Можете ли вы самостоятельно простоять более 10 секунд без опоры?'),
             value: val5,
@@ -161,6 +166,7 @@ class _rivermeadLogicState extends State<rivermeadLogic> {
               });
             }),
         CheckboxListTile(
+            controlAffinity: ListTileControlAffinity.leading,
             title: Text(
                 'Перемещение. Можете ли вы переместиться с постели на стул и обратно без какой-либо помощи?'),
             value: val6,
@@ -174,6 +180,7 @@ class _rivermeadLogicState extends State<rivermeadLogic> {
               });
             }),
         CheckboxListTile(
+            controlAffinity: ListTileControlAffinity.leading,
             title: Text(
                 'Ходьба по комнате. Можете ли вы пройти 10 метров, используя при необходимости вспомогательные средства, но без помощи постороннего лица?'),
             value: val7,
@@ -187,6 +194,7 @@ class _rivermeadLogicState extends State<rivermeadLogic> {
               });
             }),
         CheckboxListTile(
+            controlAffinity: ListTileControlAffinity.leading,
             title: Text(
                 'Ходьба за пределами квартиры. Можете ли вы ходить за пределами квартиры, по тротуару без посторонней помощи?'),
             value: val8,
@@ -200,6 +208,7 @@ class _rivermeadLogicState extends State<rivermeadLogic> {
               });
             }),
         CheckboxListTile(
+            controlAffinity: ListTileControlAffinity.leading,
             title: Text(
                 'Ходьба по комнате без применения вспомогательных средств. Можете ли вы пройти 10 метров в пределах квартиры без вспомогательных средств и без помощи другого лица?'),
             value: val9,
@@ -213,6 +222,7 @@ class _rivermeadLogicState extends State<rivermeadLogic> {
               });
             }),
         CheckboxListTile(
+            controlAffinity: ListTileControlAffinity.leading,
             title: Text(
                 'Поднятие предметов с пола. Если вы уронили что-то на пол, можете ли вы пройти 5 метров, поднять предмет, который вы уронили, и вернуться обратно?'),
             value: val10,
@@ -226,6 +236,7 @@ class _rivermeadLogicState extends State<rivermeadLogic> {
               });
             }),
         CheckboxListTile(
+            controlAffinity: ListTileControlAffinity.leading,
             title: Text(
                 'Ходьба вне квартиры по пересечённой местности. Можете ли вы без посторонней помощи ходить за пределами квартиры по неровной поверхности (трава,гравий,снег и т.п.)?'),
             value: val11,
@@ -239,6 +250,7 @@ class _rivermeadLogicState extends State<rivermeadLogic> {
               });
             }),
         CheckboxListTile(
+            controlAffinity: ListTileControlAffinity.leading,
             title: Text(
                 'Прием ванны. Можете ли вы войти в ванну (душевую кабину) и выйти из нее без присмотра, вымыться самостоятельно?'),
             value: val12,
@@ -252,6 +264,7 @@ class _rivermeadLogicState extends State<rivermeadLogic> {
               });
             }),
         CheckboxListTile(
+            controlAffinity: ListTileControlAffinity.leading,
             title: Text(
                 'Бег. Можете ли вы пробежать 10 метров не прихрамывая, за 4 секунды (допускается быстрая ходьба)?'),
             value: val13,
@@ -265,6 +278,7 @@ class _rivermeadLogicState extends State<rivermeadLogic> {
               });
             }),
         CheckboxListTile(
+            controlAffinity: ListTileControlAffinity.leading,
             title: Text(
                 'Подъем по лестнице. Можете ли вы подняться по лестнице на один пролет без посторонней помощи?'),
             value: val14,
@@ -278,6 +292,7 @@ class _rivermeadLogicState extends State<rivermeadLogic> {
               });
             }),
         CheckboxListTile(
+            controlAffinity: ListTileControlAffinity.leading,
             title: Text(
                 'Подъем и спуск на 4 ступени. Можете ли вы подняться на 4 ступени и спуститься обратно, не используя вспомогательные средства (в том числе без перил)?'),
             value: val15,

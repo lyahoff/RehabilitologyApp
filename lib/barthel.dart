@@ -62,6 +62,11 @@ class _BarthelRadioState extends State<BarthelRadio> {
     return ListView(
       padding: EdgeInsets.all(10),
       children: [
+        header(
+            'Индекс Бартел (Barthel index) - шкала оценки уровня повседневной активности пациента для решения вопроса о нуждаемости его в уходе.'),
+        SizedBox(
+          height: 10,
+        ),
         header('Контроль дефекации'),
         RadioListTile(
             title: Text(
