@@ -200,7 +200,7 @@ class _MertonLogicState extends State<MertonLogic> {
         header('Функциональная мобильность'),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('ходьба в пределах квартиры'),
+            title: Text('Ходьба в пределах квартиры'),
             value: _fun1,
             onChanged: (val) {
               setState(() {
@@ -213,7 +213,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('ходьба на улице'),
+            title: Text('Ходьба на улице'),
             value: _fun2,
             onChanged: (val) {
               setState(() {
@@ -226,7 +226,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('ходьба по лестнице'),
+            title: Text('Ходьба по лестнице'),
             value: _fun3,
             onChanged: (val) {
               setState(() {
@@ -239,7 +239,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('управление инвалидной коляской при необходимости'),
+            title: Text('Управление инвалидной коляской при необходимости'),
             value: _fun4,
             onChanged: (val) {
               setState(() {
@@ -252,7 +252,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('вставание из инвалидной коляски и посадка в нее'),
+            title: Text('Вставание из инвалидной коляски и посадка в нее'),
             value: _fun5,
             onChanged: (val) {
               setState(() {
@@ -265,7 +265,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('выход из автомобиля и посадка в него'),
+            title: Text('Выход из автомобиля и посадка в него'),
             value: _fun6,
             onChanged: (val) {
               setState(() {
@@ -278,7 +278,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('управление автомобилем'),
+            title: Text('Управление автомобилем'),
             value: _fun7,
             onChanged: (val) {
               setState(() {
@@ -291,7 +291,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('использование общественного транспорта'),
+            title: Text('Использование общественного транспорта'),
             value: _fun8,
             onChanged: (val) {
               setState(() {
@@ -305,7 +305,7 @@ class _MertonLogicState extends State<MertonLogic> {
         header('Перемещение'),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('вставание со стула и посадка на него'),
+            title: Text('Вставание со стула и посадка на него'),
             value: _moving1,
             onChanged: (val) {
               setState(() {
@@ -318,7 +318,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('вставание с кровати и укладывание в нее'),
+            title: Text('Вставание с кровати и укладывание в нее'),
             value: _moving2,
             onChanged: (val) {
               setState(() {
@@ -331,7 +331,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('повороты в кровати'),
+            title: Text('Повороты в кровати'),
             value: _moving3,
             onChanged: (val) {
               setState(() {
@@ -344,7 +344,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('использование туалета'),
+            title: Text('Использование туалета'),
             value: _moving4,
             onChanged: (val) {
               setState(() {
@@ -357,7 +357,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('прием душа/ванны'),
+            title: Text('Прием душа/ванны'),
             value: _moving5,
             onChanged: (val) {
               setState(() {
@@ -371,7 +371,7 @@ class _MertonLogicState extends State<MertonLogic> {
         header('Индивидуальный уход'),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('мытье'),
+            title: Text('Мытье'),
             value: _individual1,
             onChanged: (val) {
               setState(() {
@@ -384,7 +384,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('мытье и вытирание лица и рук'),
+            title: Text('Мытье и вытирание лица и рук'),
             value: _individual2,
             onChanged: (val) {
               setState(() {
@@ -397,7 +397,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('мытье и вытирание верхней части тела'),
+            title: Text('Мытье и вытирание верхней части тела'),
             value: _individual3,
             onChanged: (val) {
               setState(() {
@@ -410,7 +410,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('мытье и вытирание всего тела'),
+            title: Text('Мытье и вытирание всего тела'),
             value: _individual4,
             onChanged: (val) {
               setState(() {
@@ -423,7 +423,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('чистка зубов'),
+            title: Text('Чистка зубов'),
             value: _individual5,
             onChanged: (val) {
               setState(() {
@@ -436,7 +436,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('выдавливание зубной пасты из тюбика'),
+            title: Text('Выдавливание зубной пасты из тюбика'),
             value: _individual6,
             onChanged: (val) {
               setState(() {
@@ -449,7 +449,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('подстригание ногтей'),
+            title: Text('Подстригание ногтей'),
             value: _individual7,
             onChanged: (val) {
               setState(() {
@@ -462,7 +462,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('мытье головы'),
+            title: Text('Мытье головы'),
             value: _individual8,
             onChanged: (val) {
               setState(() {
@@ -475,7 +475,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('причесывание'),
+            title: Text('Причесывание'),
             value: _individual9,
             onChanged: (val) {
               setState(() {
@@ -488,7 +488,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('бритье'),
+            title: Text('Бритье'),
             value: _individual10,
             onChanged: (val) {
               setState(() {
@@ -501,7 +501,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('использование туалетной бумаги'),
+            title: Text('Использование туалетной бумаги'),
             value: _individual11,
             onChanged: (val) {
               setState(() {
@@ -515,7 +515,7 @@ class _MertonLogicState extends State<MertonLogic> {
         header('Одевание'),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('надевание и снимание верхней одежды'),
+            title: Text('Надевание и снимание верхней одежды'),
             value: _dress1,
             onChanged: (val) {
               setState(() {
@@ -528,7 +528,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('надевание и снимание нижнего белья'),
+            title: Text('Надевание и снимание нижнего белья'),
             value: _dress2,
             onChanged: (val) {
               setState(() {
@@ -541,7 +541,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('управление пуговицами и молниями'),
+            title: Text('Управление пуговицами и молниями'),
             value: _dress3,
             onChanged: (val) {
               setState(() {
@@ -554,7 +554,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('надевание носков'),
+            title: Text('Надевание носков'),
             value: _dress4,
             onChanged: (val) {
               setState(() {
@@ -567,7 +567,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('надевание обуви'),
+            title: Text('Надевание обуви'),
             value: _dress5,
             onChanged: (val) {
               setState(() {
@@ -581,7 +581,7 @@ class _MertonLogicState extends State<MertonLogic> {
         header('Прием пищи и питье'),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('владение столовыми приборами'),
+            title: Text('Владение столовыми приборами'),
             value: _feed1,
             onChanged: (val) {
               setState(() {
@@ -594,7 +594,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('питье из чашки/кружки'),
+            title: Text('Питье из чашки/кружки'),
             value: _feed2,
             onChanged: (val) {
               setState(() {
@@ -608,7 +608,7 @@ class _MertonLogicState extends State<MertonLogic> {
         header('Производительность домашнего труда'),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('ведение домашнего хозяйства/приготовление пищи'),
+            title: Text('Ведение домашнего хозяйства/приготовление пищи'),
             value: _work1,
             onChanged: (val) {
               setState(() {
@@ -621,7 +621,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('приготовление горячих напитков'),
+            title: Text('Приготовление горячих напитков'),
             value: _work2,
             onChanged: (val) {
               setState(() {
@@ -634,7 +634,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('использование газовой/электрической плиты'),
+            title: Text('Использование газовой/электрической плиты'),
             value: _work3,
             onChanged: (val) {
               setState(() {
@@ -647,7 +647,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('поднятие и переноска кастрюль и сковородок'),
+            title: Text('Поднятие и переноска кастрюль и сковородок'),
             value: _work4,
             onChanged: (val) {
               setState(() {
@@ -660,7 +660,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('чистка овощей и фруктов'),
+            title: Text('Чистка овощей и фруктов'),
             value: _work5,
             onChanged: (val) {
               setState(() {
@@ -673,7 +673,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('отбивание продуктов и использование терки'),
+            title: Text('Отбивание продуктов и использование терки'),
             value: _work6,
             onChanged: (val) {
               setState(() {
@@ -686,7 +686,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('открывание бутылок/банок'),
+            title: Text('Открывание бутылок/банок'),
             value: _work7,
             onChanged: (val) {
               setState(() {
@@ -699,7 +699,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('открывание пакетов'),
+            title: Text('Открывание пакетов'),
             value: _work8,
             onChanged: (val) {
               setState(() {
@@ -712,7 +712,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('возможность стоять при приготовлении пищи'),
+            title: Text('Возможность стоять при приготовлении пищи'),
             value: _work9,
             onChanged: (val) {
               setState(() {
@@ -725,7 +725,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('мытье посуды'),
+            title: Text('Мытье посуды'),
             value: _work10,
             onChanged: (val) {
               setState(() {
@@ -739,7 +739,7 @@ class _MertonLogicState extends State<MertonLogic> {
         header('Чистка/Стирка/Шопинг'),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('использование штепселей, выключателей'),
+            title: Text('Использование штепселей, выключателей'),
             value: _shopping1,
             onChanged: (val) {
               setState(() {
@@ -752,7 +752,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('использование пылесоса'),
+            title: Text('Использование пылесоса'),
             value: _shopping2,
             onChanged: (val) {
               setState(() {
@@ -765,7 +765,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('использование веников/метелок'),
+            title: Text('Использование веников/метелок'),
             value: _shopping3,
             onChanged: (val) {
               setState(() {
@@ -778,7 +778,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('вытирание пыли'),
+            title: Text('Вытирание пыли'),
             value: _shopping4,
             onChanged: (val) {
               setState(() {
@@ -791,7 +791,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('открывание и закрывание кранов'),
+            title: Text('Открывание и закрывание кранов'),
             value: _shopping5,
             onChanged: (val) {
               setState(() {
@@ -804,7 +804,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('ручная стирка'),
+            title: Text('Ручная стирка'),
             value: _shopping6,
             onChanged: (val) {
               setState(() {
@@ -817,7 +817,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('использование стиральной машины'),
+            title: Text('Использование стиральной машины'),
             value: _shopping7,
             onChanged: (val) {
               setState(() {
@@ -830,7 +830,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('развешивание одежды'),
+            title: Text('Развешивание одежды'),
             value: _shopping8,
             onChanged: (val) {
               setState(() {
@@ -843,7 +843,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('глажка'),
+            title: Text('Глажка'),
             value: _shopping9,
             onChanged: (val) {
               setState(() {
@@ -856,7 +856,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('шопинг'),
+            title: Text('Шопинг'),
             value: _shopping10,
             onChanged: (val) {
               setState(() {
@@ -870,7 +870,7 @@ class _MertonLogicState extends State<MertonLogic> {
         header('Разное'),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('поднимание вещей с пола'),
+            title: Text('Поднимание вещей с пола'),
             value: _different1,
             onChanged: (val) {
               setState(() {
@@ -883,7 +883,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('открывание и закрывание дверей дома'),
+            title: Text('Открывание и закрывание дверей дома'),
             value: _different2,
             onChanged: (val) {
               setState(() {
@@ -896,7 +896,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('использование ключей'),
+            title: Text('Использование ключей'),
             value: _different3,
             onChanged: (val) {
               setState(() {
@@ -909,7 +909,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('использование металлических денег'),
+            title: Text('Использование металлических денег'),
             value: _different4,
             onChanged: (val) {
               setState(() {
@@ -922,7 +922,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('использование бумажных денег'),
+            title: Text('Использование бумажных денег'),
             value: _different5,
             onChanged: (val) {
               setState(() {
@@ -935,7 +935,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('использование телефона'),
+            title: Text('Использование телефона'),
             value: _different6,
             onChanged: (val) {
               setState(() {
@@ -948,7 +948,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('использование ручки/карандаша'),
+            title: Text('Использование ручки/карандаша'),
             value: _different7,
             onChanged: (val) {
               setState(() {
@@ -962,7 +962,7 @@ class _MertonLogicState extends State<MertonLogic> {
         header('Досуг'),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('спокойный отдых'),
+            title: Text('Спокойный отдых'),
             value: _chill1,
             onChanged: (val) {
               setState(() {
@@ -975,7 +975,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('активный отдых'),
+            title: Text('Активный отдых'),
             value: _chill2,
             onChanged: (val) {
               setState(() {
@@ -988,7 +988,7 @@ class _MertonLogicState extends State<MertonLogic> {
             }),
         CheckboxListTile(
             controlAffinity: ListTileControlAffinity.leading,
-            title: Text('общение'),
+            title: Text('Общение'),
             value: _chill3,
             onChanged: (val) {
               setState(() {
