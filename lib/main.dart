@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:rehabilitology/barthel.dart';
 import 'package:rehabilitology/hauser.dart';
@@ -30,6 +32,7 @@ class RehabilitologyBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
           'Калькулятор реабилитолога',
@@ -39,63 +42,67 @@ class RehabilitologyBody extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 0,
       ),
-      body: ListView(children: [
-        cardList(
+      body: ListView(padding: EdgeInsets.all(10), children: [
+        CustomCard(
             'Индекс Бартел',
-            'шкала оценки уровня повседневной активности пациента для решения вопроса о нуждаемости его в уходе',
+            'Шкала оценки уровня повседневной активности пациента для решения вопроса о нуждаемости его в уходе',
+            'images/barthel.png',
             () => Barthel()),
-        cardList(
-          'Шкала Ватерлоу',
-          'используется для оценки риска развития пролежней у пациента',
-          () => Waterlow(),
-        ),
-        cardList(
-          'Шкала Мертон и Саттон',
-          'служит для оценки уровня бытовой и социальной адаптации',
-          () => Merton(),
-        ),
-        cardList(
+        CustomCard(
+            'Шкала Ватерлоу',
+            'Используется для оценки риска развития пролежней у пациента',
+            'images/waterlow.png',
+            () => Waterlow()),
+        CustomCard(
+            'Шкала Мертон и Саттон',
+            'Служит для оценки уровня бытовой и социальной адаптации',
+            'images/merton.png',
+            () => Merton()),
+        CustomCard(
             'Шкала падений Морзе',
-            'используется для оценки вероятности риска падения, в связи с наличием наследственных или приобретенных факторов риска',
+            'Используется для оценки вероятности риска падения, в связи с наличием наследственных или приобретенных факторов риска',
+            'images/morse.png',
             () => Morse()),
-        cardList(
+        CustomCard(
             'Поведенческая шкала боли',
-            'шкала, применяемая для оценки уровня боли у неконтактного пациента, основанная на поведенческих реакциях',
+            'Шкала, применяемая для оценки уровня боли у неконтактного пациента, основанная на поведенческих реакциях',
+            'images/pain.png',
             () => Pain()),
-        cardList(
+        CustomCard(
             'Шкала Рэнкина',
-            'универсальная шкала оценки инвалидности, независимости и исходов реабилитации. Часто используется для оценки степени инвалидизации после инсульта.',
+            'Универсальная шкала оценки инвалидности, независимости и исходов реабилитации. Часто используется для оценки степени инвалидизации после инсульта',
+            'images/renkin.png',
             () => Rankin()),
-        cardList(
+        CustomCard(
             'Индекс мобильности Ривермид',
-            'методика предназначенная для клинической оценки мобильности пациента',
+            'Методика предназначенная для клинической оценки мобильности пациента',
+            'images/rivermead.png',
             () => Rivermead()),
-        cardList(
+        CustomCard(
             'Индекс ходьбы Хаузера',
-            'используется для оценки локомоторной функции пациента',
+            'Используется для оценки локомоторной функции пациента',
+            'images/hauser.png',
             () => Hauser()),
       ]),
     );
   }
 }
 
-Widget cardList(String title, String subtitle, Function() foo) {
-  return Column(
-    children: [
-      ListTile(
-        tileColor: Colors.grey[100],
-        title: Text(
-          title,
-          style: const TextStyle(fontWeight: FontWeight.bold),
+Widget CustomCard(String title, String subtitle, String imagePath, foo()) {
+  return Card(
+      shadowColor: Colors.black,
+      color: Colors.white,
+      elevation: 2,
+      child: InkWell(
+        onTap: (() => {runApp(foo())}),
+        child: Column(
+          children: [
+            ListTile(
+              leading: Image.asset(imagePath),
+              title: Text('$title\n'),
+              subtitle: Text('$subtitle'),
+            ),
+          ],
         ),
-        subtitle: Text(subtitle),
-        onTap: () {
-          runApp(foo());
-        },
-      ),
-      const SizedBox(
-        height: 5,
-      )
-    ],
-  );
+      ));
 }
