@@ -55,175 +55,235 @@ class _PainLogicState extends State<PainLogic> {
     return ListView(
       padding: EdgeInsets.all(10),
       children: [
-        Text(
-          'Поведенческая шкала боли',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
+        Card(
+          elevation: 2,
+          child: ListTile(
+            title: Text(
+              'Поведенческая шкала боли - шкала, применяемая для оценки уровня боли у неконтактного пациента, основанная на поведенческих реакциях.',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
           ),
-          textAlign: TextAlign.center,
         ),
-        SizedBox(
-          height: 10,
+        Card(
+          elevation: 2,
+          child: Column(
+            children: [
+              ListTile(
+                title: Text(
+                  'Лицо',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ),
+              RadioListTile(
+                  title: Text('Мышцы лица расслаблены'),
+                  value: _val1,
+                  groupValue: 0,
+                  onChanged: (val) {
+                    setState(() {
+                      _val1 = 0;
+                    });
+                  }),
+              RadioListTile(
+                  title: Text('Мимические мышцы напряжены, хмурый взгляд'),
+                  value: _val1,
+                  groupValue: 1,
+                  onChanged: (val) {
+                    setState(() {
+                      _val1 = 1;
+                    });
+                  }),
+              RadioListTile(
+                  title: Text('Cжатые челюсти, гримаса боли'),
+                  value: _val1,
+                  groupValue: 2,
+                  onChanged: (val) {
+                    setState(() {
+                      _val1 = 2;
+                    });
+                  }),
+            ],
+          ),
         ),
-        header(
-            'Поведенческая шкала боли (Behavioral Pain Scale BPS) шкала, применяемая для оценки уровня боли у неконтактного пациента, основанная на поведенческих реакциях.'),
-        SizedBox(
-          height: 10,
+        Card(
+          elevation: 2,
+          child: Column(
+            children: [
+              ListTile(
+                title: Text(
+                  'Беспокойство',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ),
+              RadioListTile(
+                  title: Text('Пациент расслаблен, движения нормальные'),
+                  value: _val2,
+                  groupValue: 0,
+                  onChanged: (val) {
+                    setState(() {
+                      _val2 = 0;
+                    });
+                  }),
+              RadioListTile(
+                  title: Text(
+                      'Нечастые беспокойные движения, смена положения тела'),
+                  value: _val2,
+                  groupValue: 1,
+                  onChanged: (val) {
+                    setState(() {
+                      _val2 = 1;
+                    });
+                  }),
+              RadioListTile(
+                  title: Text(
+                      'Частые беспокойные движения, включая голову, постоянные смены положения тела'),
+                  value: _val2,
+                  groupValue: 2,
+                  onChanged: (val) {
+                    setState(() {
+                      _val2 = 2;
+                    });
+                  }),
+            ],
+          ),
         ),
-        header('Лицо'),
-        RadioListTile(
-            title: Text('Мышцы лица расслаблены'),
-            value: _val1,
-            groupValue: 0,
-            onChanged: (val) {
-              setState(() {
-                _val1 = 0;
-              });
-            }),
-        RadioListTile(
-            title: Text('Мимические мышцы напряжены, хмурый взгляд'),
-            value: _val1,
-            groupValue: 1,
-            onChanged: (val) {
-              setState(() {
-                _val1 = 1;
-              });
-            }),
-        RadioListTile(
-            title: Text('Cжатые челюсти, гримаса боли'),
-            value: _val1,
-            groupValue: 2,
-            onChanged: (val) {
-              setState(() {
-                _val1 = 2;
-              });
-            }),
-        header('Беспокойство'),
-        RadioListTile(
-            title: Text('Пациент расслаблен, движения нормальные'),
-            value: _val2,
-            groupValue: 0,
-            onChanged: (val) {
-              setState(() {
-                _val2 = 0;
-              });
-            }),
-        RadioListTile(
-            title: Text('Нечастые беспокойные движения, смена положения тела'),
-            value: _val2,
-            groupValue: 1,
-            onChanged: (val) {
-              setState(() {
-                _val2 = 1;
-              });
-            }),
-        RadioListTile(
-            title: Text(
-                'Частые беспокойные движения, включая голову, постоянные смены положения тела'),
-            value: _val2,
-            groupValue: 2,
-            onChanged: (val) {
-              setState(() {
-                _val2 = 2;
-              });
-            }),
-        header('Мышечный тонус'),
-        RadioListTile(
-            title: Text('Нормальный мышечный тонус'),
-            value: _val3,
-            groupValue: 0,
-            onChanged: (val) {
-              setState(() {
-                _val3 = 0;
-              });
-            }),
-        RadioListTile(
-            title: Text('Повышенный тонус, сгибание пальцев рук и ног'),
-            value: _val3,
-            groupValue: 1,
-            onChanged: (val) {
-              setState(() {
-                _val3 = 1;
-              });
-            }),
-        RadioListTile(
-            title: Text('Мышечная ригидность'),
-            value: _val3,
-            groupValue: 2,
-            onChanged: (val) {
-              setState(() {
-                _val3 = 2;
-              });
-            }),
-        header('Речь'),
-        RadioListTile(
-            title: Text('Никаких посторонних звуков'),
-            value: _val4,
-            groupValue: 0,
-            onChanged: (val) {
-              setState(() {
-                _val4 = 0;
-              });
-            }),
-        RadioListTile(
-            title: Text('Редкие стоны, крики, хныканье и ворчание'),
-            value: _val4,
-            groupValue: 1,
-            onChanged: (val) {
-              setState(() {
-                _val4 = 1;
-              });
-            }),
-        RadioListTile(
-            title:
-                Text('Частые или постоянные стоны, крики, хныканье и ворчание'),
-            value: _val4,
-            groupValue: 2,
-            onChanged: (val) {
-              setState(() {
-                _val4 = 2;
-              });
-            }),
-        header('Контактность, управляемость'),
-        RadioListTile(
-            title: Text('Спокоен, охотно сотрудничает'),
-            value: _val5,
-            groupValue: 0,
-            onChanged: (val) {
-              setState(() {
-                _val5 = 0;
-              });
-            }),
-        RadioListTile(
-            title: Text(
-                'Возможно успокоить словом, выполняет предписания персонала'),
-            value: _val5,
-            groupValue: 1,
-            onChanged: (val) {
-              setState(() {
-                _val5 = 1;
-              });
-            }),
-        RadioListTile(
-            title: Text(
-                'Трудно успокоить словом, негативное отношение к персоналу, не выполняет предписания'),
-            value: _val5,
-            groupValue: 2,
-            onChanged: (val) {
-              setState(() {
-                _val5 = 2;
-              });
-            }),
-        SizedBox(
-          height: 20,
+        Card(
+          elevation: 2,
+          child: Column(
+            children: [
+              ListTile(
+                title: Text(
+                  'Мышечный тонус',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ),
+              RadioListTile(
+                  title: Text('Нормальный мышечный тонус'),
+                  value: _val3,
+                  groupValue: 0,
+                  onChanged: (val) {
+                    setState(() {
+                      _val3 = 0;
+                    });
+                  }),
+              RadioListTile(
+                  title: Text('Повышенный тонус, сгибание пальцев рук и ног'),
+                  value: _val3,
+                  groupValue: 1,
+                  onChanged: (val) {
+                    setState(() {
+                      _val3 = 1;
+                    });
+                  }),
+              RadioListTile(
+                  title: Text('Мышечная ригидность'),
+                  value: _val3,
+                  groupValue: 2,
+                  onChanged: (val) {
+                    setState(() {
+                      _val3 = 2;
+                    });
+                  }),
+            ],
+          ),
         ),
-        Text(
-          'Сумма баллов по шкале боли составляет ${_val1 + _val2 + _val3 + _val4 + _val5}',
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        Card(
+          elevation: 2,
+          child: Column(
+            children: [
+              ListTile(
+                title: Text(
+                  'Речь',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ),
+              RadioListTile(
+                  title: Text('Никаких посторонних звуков'),
+                  value: _val4,
+                  groupValue: 0,
+                  onChanged: (val) {
+                    setState(() {
+                      _val4 = 0;
+                    });
+                  }),
+              RadioListTile(
+                  title: Text('Редкие стоны, крики, хныканье и ворчание'),
+                  value: _val4,
+                  groupValue: 1,
+                  onChanged: (val) {
+                    setState(() {
+                      _val4 = 1;
+                    });
+                  }),
+              RadioListTile(
+                  title: Text(
+                      'Частые или постоянные стоны, крики, хныканье и ворчание'),
+                  value: _val4,
+                  groupValue: 2,
+                  onChanged: (val) {
+                    setState(() {
+                      _val4 = 2;
+                    });
+                  }),
+            ],
+          ),
         ),
-        SizedBox(
-          height: 20,
+        Card(
+          elevation: 2,
+          child: Column(
+            children: [
+              ListTile(
+                title: Text(
+                  'Контактность, управляемость',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+              ),
+              RadioListTile(
+                  title: Text('Спокоен, охотно сотрудничает'),
+                  value: _val5,
+                  groupValue: 0,
+                  onChanged: (val) {
+                    setState(() {
+                      _val5 = 0;
+                    });
+                  }),
+              RadioListTile(
+                  title: Text(
+                      'Возможно успокоить словом, выполняет предписания персонала'),
+                  value: _val5,
+                  groupValue: 1,
+                  onChanged: (val) {
+                    setState(() {
+                      _val5 = 1;
+                    });
+                  }),
+              RadioListTile(
+                  title: Text(
+                      'Трудно успокоить словом, негативное отношение к персоналу, не выполняет предписания'),
+                  value: _val5,
+                  groupValue: 2,
+                  onChanged: (val) {
+                    setState(() {
+                      _val5 = 2;
+                    });
+                  }),
+            ],
+          ),
+        ),
+        Card(
+          elevation: 2,
+          child: Column(children: [
+            SizedBox(
+              height: 5,
+            ),
+            ListTile(
+                title: Text(
+              'Сумма баллов по шкале боли составляет ${_val1 + _val2 + _val3 + _val4 + _val5}',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            )),
+            SizedBox(
+              height: 5,
+            ),
+          ]),
         ),
       ],
     );
