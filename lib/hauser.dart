@@ -8,29 +8,35 @@ class Hauser extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        title: const Text(
-          'Индекс ходьбы Хаузера',
-          style: TextStyle(color: Colors.black),
+        home: WillPopScope(
+      onWillPop: () async {
+        runApp(Rehabilitology());
+        return false;
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          elevation: 0,
+          title: const Text(
+            'Индекс ходьбы Хаузера',
+            style: TextStyle(color: Colors.black),
+          ),
+          centerTitle: true,
+          backgroundColor: Colors.white,
+          leading: Builder(
+            builder: (BuildContext context) {
+              return IconButton(
+                icon: const Icon(Icons.arrow_back),
+                color: Colors.black,
+                onPressed: () {
+                  runApp(const Rehabilitology());
+                },
+                tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+              );
+            },
+          ),
         ),
-        centerTitle: true,
-        backgroundColor: Colors.white,
-        leading: Builder(
-          builder: (BuildContext context) {
-            return IconButton(
-              icon: const Icon(Icons.arrow_back),
-              color: Colors.black,
-              onPressed: () {
-                runApp(const Rehabilitology());
-              },
-              tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
-            );
-          },
-        ),
+        body: RadioHauser(),
       ),
-      body: RadioHauser(),
     ));
   }
 }
